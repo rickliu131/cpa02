@@ -6,7 +6,7 @@
   /login (get and post)
   /logout (get)
 
-  When the user logs in or signs in, 
+  When the user logs in or signs in,
   it adds their user name and user object to the req.session for use in the app.js controller
   and it sets the res.locals properties for use in the view
   res.locals.loggedIn
@@ -80,7 +80,7 @@ router.post('/signup',
 
         // check to make sure that username is not already taken!!
         const duplicates = await User.find({username})
-        
+
         if (duplicates.length>0){
           // it would be better to render a page with an error message instead of this plain text response
           res.send("username has already been taken, please go back and try another username")
@@ -91,14 +91,14 @@ router.post('/signup',
              passphrase:encrypted,
              age:age
             })
-          
+
           await user.save()
           req.session.username = user.username
           req.session.user = user
           res.redirect('/')
         }
-        
-        
+
+
       }
     }catch(e){
       next(e)

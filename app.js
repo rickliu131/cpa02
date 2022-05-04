@@ -21,6 +21,7 @@ const axios = require("axios")
 const ToDoItem = require("./models/ToDoItem")
 const Course = require('./models/Course')
 const Schedule = require('./models/Schedule')
+const Post = require('./models/Post')
 
 // *********************************************************** //
 //  Loading JSON datasets
@@ -33,9 +34,7 @@ const courses = require('./public/data/courses20-21.json')
 // *********************************************************** //
 
 const mongoose = require( 'mongoose' );
-//const mongodb_URI = 'mongodb://localhost:27017/cs103a_todo'
-const mongodb_URI = 'mongodb+srv://cs_sj:BrandeisSpr22@cluster0.kgugl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-//mongodb+srv://cs103a:<password>@cluster0.kgugl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+const mongodb_URI = process.env.mongodb_URI;
 
 mongoose.connect( mongodb_URI, { useNewUrlParser: true, useUnifiedTopology: true } );
 // fix deprecation warnings
@@ -353,6 +352,34 @@ app.get('/schedule/remove/:courseId',
   }
 )
 
+// CPA 2
+app.get('/forum', async (req, res, next) => {
+  if (req.query.show == undefined) {
+    res.locals.showAddPostInput = 0;
+  } else {
+    res.locals.showAddPostInput = 1;
+  }
+  res.locals.posts = await Post.find({});
+  res.locals.posts = res.locals.posts.reverse();
+  res.render('forum')
+}
+)
+
+app.post('/add_post', async (req, res) => {
+  await Post.create({text: req.body.text, author: req.body.author});
+  res.redirect('/forum');
+})
+
+app.get('/del_post', async (req, res) => {
+  const post = await Post.findOne({_id: req.query.id});
+  if (post.author == req.session.username) {
+    await Post.deleteOne({_id: req.query.id});
+  } else {
+    console.log("Post deleting request is rejected, because the current user is not the author.");
+  }
+  res.redirect('/forum');
+})
+
 
 // here we catch 404 errors and forward to error handler
 app.use(function(req, res, next) {
@@ -375,7 +402,7 @@ app.use(function(err, req, res, next) {
 //  Starting up the server!
 // *********************************************************** //
 //Here we set the port to use between 1024 and 65535  (2^16-1)
-const port = process.env.PORT || "5000";
+const port = process.env.PORT || "3000";
 console.log('connecting on port '+port)
 app.set("port", port);
 
