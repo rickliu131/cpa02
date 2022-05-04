@@ -7,30 +7,25 @@ On the basis of PA03, built a forum section where users can leave their comments
 # How to use it
 
 First, log in
-<img width="650" alt="Screen Shot 2022-05-04 at 6 27 34 PM" src="https://user-images.githubusercontent.com/49468143/166835753-0180e537-4fc6-4b54-9477-3509b5f8bb6f.png">
+<img width="1440" alt="Screen Shot 2022-05-04 at 6 33 49 PM" src="https://user-images.githubusercontent.com/49468143/166836404-2890d593-c76a-46a7-bfc6-4d75da6795f1.png">
 
 Then go clicking the Forum section on the navigation bar
-<img width="271" alt="Screen Shot 2022-05-04 at 6 28 00 PM" src="https://user-images.githubusercontent.com/49468143/166835760-f60d36d8-cec4-40f8-998b-a94baad9f61b.png">
-
+<img width="1440" alt="Screen Shot 2022-05-04 at 6 33 58 PM" src="https://user-images.githubusercontent.com/49468143/166836416-621611d8-5351-4eb6-9fb2-1d34c01666d6.png">
 
 Add your comment by clicking the blue button
-<img width="727" alt="Screen Shot 2022-05-04 at 6 28 14 PM" src="https://user-images.githubusercontent.com/49468143/166835768-2c3635ba-e380-422a-a7b1-220f29621f54.png">
-
+<img width="1440" alt="Screen Shot 2022-05-04 at 6 34 08 PM" src="https://user-images.githubusercontent.com/49468143/166836431-1e34a17b-f115-45bc-b049-0b19883336ba.png">
 
 Submit
-<img width="358" alt="Screen Shot 2022-05-04 at 6 28 35 PM" src="https://user-images.githubusercontent.com/49468143/166835792-28e18991-04ce-4cbf-bcbe-23fee13d9483.png">
-
+<img width="1440" alt="Screen Shot 2022-05-04 at 6 34 25 PM" src="https://user-images.githubusercontent.com/49468143/166836442-299bcd12-09c3-4101-b36c-5330153730eb.png">
 
 Your comment is up there
-<img width="1440" alt="Screen Shot 2022-05-04 at 6 28 45 PM" src="https://user-images.githubusercontent.com/49468143/166835804-6f5d5260-b076-45bc-9ae7-9fa41bf43fa9.png">
-
+<img width="1440" alt="Screen Shot 2022-05-04 at 6 34 32 PM" src="https://user-images.githubusercontent.com/49468143/166836454-cc17e737-0724-4255-bac0-f9d6ff960ae0.png">
 
 Delete if you want by clicking the gray Delete button (you can only delete your own comments)
-<img width="172" alt="Screen Shot 2022-05-04 at 6 28 50 PM" src="https://user-images.githubusercontent.com/49468143/166835813-5f1b7286-4ec0-4fae-86e1-cd60523ce6f5.png">
-
+<img width="1400" alt="Screen Shot 2022-05-04 at 6 34 48 PM" src="https://user-images.githubusercontent.com/49468143/166836476-4ffd3305-611e-4545-9e4d-9670d43e79da.png">
 
 Deleted
-<img width="1440" alt="Screen Shot 2022-05-04 at 6 28 53 PM" src="https://user-images.githubusercontent.com/49468143/166835826-08f2a976-2739-4fb4-a2eb-f5d003720237.png">
+<img width="1440" alt="Screen Shot 2022-05-04 at 6 34 55 PM" src="https://user-images.githubusercontent.com/49468143/166836502-9ce99ddf-b780-4f4d-b661-b1f28e6d1aa1.png">
 
 # Installation
 
